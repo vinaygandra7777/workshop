@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Delius Swash Caps", cursive;
+            font-weight: 500;
+  font-style: normal;
+
+        }
+        *{
+            margin:0%;
+            box-sizing: border-box;
+            padding: 0%;
+        }
+        .cont{
+            background-image: url(img1.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width:100vw;
+            height:100vh;
+            background-attachment: fixed;
+        }
+        
+        .nav{
+            text-align: center;
+            position: fixed;
+            width:100%;
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 1em;
+            font-weight: 2em;
+            font-size: 1.3em;
+        }
+        .nav a:hover{
+            text-shadow: 1px 1px 6px black;
+
+        }
+        .card{
+            background-color:rgba(255, 255, 255, 0.7)
+        }
+        .ig img{
+            width:100%;
+            height: 80%;
+            border-radius: 10px;
+            margin: 10%;
+
+        }
+        .card{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            gap:2em;
+            border-radius: 10px;
+            width: 70%;
+            height: 70%;
+            margin-left: 15%;
+        }
+        .ig1{
+            margin-top: 30%;
+            width:90%;
+            margin-left:10%;
+            font-size: 1.5em;
+        }
+        .cont1{
+            background-image: url(img4.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width:100vw;
+            height:100vh;
+            background-attachment: fixed;
+        }
+        .card1{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            gap:2em;
+            border-radius: 10px;
+            width: 70%;
+            height: 70%;
+            margin-left: 15%;
+            background-color:rgba(255, 255, 255, 0.7);
+        }
+        .ig3 img{
+            width:80%;
+            height: 80%;
+            border-radius: 10px;
+            margin: 10%;
+
+        }
+        .cont2{
+            background-image: url(img3.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width:100vw;
+            height:100vh;
+            background-attachment: fixed;
+        }
+        @media (width<=600px){
+            body{
+                width:600px;
+                overflow-x: hidden;
+            }
+            .cont{
+                width:600px;
+            }
+            .cont h1{
+                position: fixed;
+                z-index:1;
+            }
+            .nav{
+                position: fixed;
+                z-index: 1;
+            }
+            .nav{
+                width:600px;
+            }
+            .card{
+                display: grid;
+                grid-template-columns: 100%;
+                padding: 1.5em;
+
+            }
+            .ig img{
+                width:80%;
+            }
+            .card1{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .cont1{
+                width:600px;
+                
+
+            }
+            .cont2{
+                width:600px;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont" id=pup>
+        <h1 style="text-align: center; position: fixed ;width:100%; margin-top:2%">Adorable Puppies</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="nav">
+            <a href="#pup">Playful pups</a>
+            <a href="#pup1">Sleepy Pups</a>
+            <a href="#pup2"> Curious pups</a>
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <div class="ig">
+                <img src="img1 (1).avif">
+            </div>
+            <div class="ig1">
+                <h2>Playful Puppies</h2>
+                <br>
+                <p>Puppies love to play! Its how they learn about the world and develop important skills</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="cont1" id="pup1">
+        <br>
+        <br>
+        <br><br><br><br><br>
+        <div class="card1">
+        <div class="ig1">
+            <h2>Sleepy Puppies</h2>
+            <br>
+            <p>Puppies love to play! Its how they learn about the world and develop important skills</p>
+        </div>
+        <div class="ig3">
+            <img src="img4.avif">
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    <div class="cont2" id="pup2">
+        <br>
+        <br>
+        <br><br><br><br><br>
+        <div class="card1">
+            <div class="ig3">
+                <img src="img3.avif">
+            </div>
+        <div class="ig1">
+            <h2>Curious Puppies</h2>
+            <br>
+            <p>Puppies love to play! Its how they learn about the world and develop important skills</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
